@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+/* ========================
+   RESET
+======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================
+   BASE
+======================== */
+body {
+    min-height: 100vh;
+    background-color: #141313;
+    color: #ebe5e5;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================
+   NAVEGAÇÃO
+======================== */
+.cabecalho-portfolio {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.navegacao-portfolio .lista-navegacao {
+    display: flex; 
+    gap: 40px; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.navegacao-portfolio .link-navegacao {
+    color: #5eb7c7;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navegacao-portfolio .link-navegacao:hover {
+    color: #1a7b7b;
+}
+
+/* ========================
+   CONTAINER PRINCIPAL
+======================== */
+.container-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%;
+    gap: 40px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+/* ========================
+   TEXTO
+======================== */
+.texto-portfolio {
+    width: 50%;
+    margin-bottom: 20px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+    
+}
+
+.titulo-portfolio {
+    font-size: 28px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.titulo-destaque {
+    color: #5eb7c7;
+    font-weight: normal;
+    font-size: inherit;
+}
+
+.descricao-portfolio {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left; 
+}
+
+.habilidades {
+    color: #0cad55;
+}
+
+/* ========================
+   LINKS SOCIAIS
+======================== */
+.links-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.titulo-sociais {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.botao-social {
+    width: 370px;
+    color: #ffffff;
+    border: 2px solid rgb(27, 114, 114);
+    text-align: center;
+    border-radius: 16px;
+    padding: 15px 0;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.botao-social:hover {
+    background-color: #1a7b7b;
+    border-color: #1a7b7b;
+    cursor: pointer;
+}
+
+.icone-social {
+    margin-right: 10px;
+    vertical-align: middle;
+    filter: invert(1);
+}
+
+/* ========================
+   FOTO
+======================== */
+.foto-perfil {
+    background-image: url('../assets/Eu.jpg');
+    width: 450px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white; 
+    padding: 10px 0;
+}
+
+.rodape-portfolio p {
+    font-size: 18px;
+    color: #f7ffff;
+    background-color: #1a7b7b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+    user-select: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* ========================
+   RESPONSIVIDADE
+======================== */
+@media (max-width: 768px) {
+    .container-portfolio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-portfolio {
+        width: 100%;
+    }
+}
+
+/* ========================
+   Sobre Mim
+======================== */
+
+.sobre-mim-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 20px;           
+    max-width: 1200px;      
+    margin: 0 auto;           
+    box-sizing: border-box;
+}
+
+.sobre-mim-texto {
+    flex: 1;
+    min-width: 250px;         
+    font-family: 'Krona One', sans-serif;
+    font-size: 14px;          
+    line-height: 1.4;         
+    padding: 20px;      
+}      
+
+.sobre-mim-texto {
+    margin-bottom: 20px;      
+}
+
+.sobre-mim-titulo-destaque {
+    color: #5eb7c7;
+    font-size: 28px;
+    font-weight: center;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    padding: 5% 5% 5%;
+    width: 100%;
+}
+
+.sobre-mim-texto-portfolio {
+    width: 50%;
+    margin-bottom: 20px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+    
+}
+
+/* ========================
+   SEÇÃO CURRÍCULO (ABOUT.HTML)
+======================== */
+
+.curriculo-container {
+    max-width: 800px; 
+    margin: 60px auto; 
+    padding: 0 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.botao-download {
+    width: 370px;
+    color: #ffffff;
+    border: 2px solid rgb(27, 114, 114);
+    text-align: center;
+    border-radius: 16px;
+    padding: 15px 0;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.botao-download:hover {
+    background-color: #1a7b7b;
+    border-color: #1a7b7b;
+    cursor: pointer;
+}
+
+.lista-curriculo {
+    list-style: none; 
+    padding-left: 0;
+    font-size: 18px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lista-curriculo li {
+    margin-bottom: 15px; 
+    line-height: 1.5;
+}
+
+.link-certificado {
+    color: #5eb7c7;
+    text-decoration: none;
+}
+
+.link-certificado:hover {
+    text-decoration: underline;
+}
+
+/* ========================
+   projetos (projects.html)
+======================== */
+
+.foto-github {
+    background-image: url('../assets/meugithub.png');
+    width: 600px;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* ========================
+   LINKS SOCIAIS/projects.html
+======================== */
+.projects-links-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.projects-titulo-sociais {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.projects-botao-social {
+    width: 370px;
+    color: #ffffff;
+    border: 2px solid rgb(27, 114, 114);
+    text-align: center;
+    border-radius: 16px;
+    padding: 15px 0;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.projects-botao-social:hover {
+    background-color: #1a7b7b;
+    border-color: #1a7b7b;
+    cursor: pointer;
+}
+
+.projects-icone-social {
+    margin-right: 10px;
+    vertical-align: middle;
+    filter: invert(1);
+}
+strong{
+    color:#5eb7c7;
+}
