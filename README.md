@@ -34,4 +34,4 @@ portfolio-2/
 🌐 Deploy
 
 Este portfólio está hospedado no GitHub Pages.
-👉 Clique aqui para acessar
+👉 [Clique aqui para acessar](https://juliooeboy.github.io/Portfolio-2/)
