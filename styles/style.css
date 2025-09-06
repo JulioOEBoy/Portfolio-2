@@ -69,12 +69,12 @@ body {
    TEXTO
 ======================== */
 .texto-portfolio {
-    width: 50%;
-    margin-bottom: 20px;
+    flex: 1;
+    min-width: 250px;         
     font-family: 'Krona One', sans-serif;
-    font-size: 10px;
-    line-height: 1.6;
-    
+    font-size: 14px;          
+    line-height: 1.4;         
+    padding: 20px;      
 }
 
 .titulo-portfolio {
@@ -91,9 +91,12 @@ body {
 }
 
 .descricao-portfolio {
-    text-align: justify;
-    text-justify: inter-word;
-    text-align-last: left; 
+    flex: 1;
+    min-width: 250px;         
+    font-family: 'Krona One', sans-serif;
+    font-size: 14px;          
+    line-height: 1.4;         
+    padding: 20px;      
 }
 
 .habilidades {
@@ -148,7 +151,7 @@ body {
 .foto-perfil {
     background-image: url('../assets/Eu.jpg');
     width: 450px;
-    height: 450px;
+    height: 550px;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -158,30 +161,31 @@ body {
    FOOTER
 ======================== */
 footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    background: linear-gradient(90deg, #0f4c4c, #1a7b7b);
+    padding: 12px 0;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
+    z-index: 1000;
     text-align: center;
-    color: white; 
-    padding: 10px 0;
 }
 
 .rodape-portfolio p {
-    font-size: 18px;
-    color: #f7ffff;
-    background-color: #1a7b7b;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
     margin: 0;
-    padding: 0 20px;
-    line-height: 1.5;
-    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #f1f1f1;
+    opacity: 0.9;
     letter-spacing: 0.5px;
-    word-wrap: break-word;
     user-select: none;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.rodape-portfolio p:hover {
+    opacity: 1;
+    transform: scale(1.02);
 }
 
 /* ========================
@@ -305,7 +309,7 @@ footer {
 
 .foto-github {
     background-image: url('../assets/meugithub.png');
-    width: 600px;
+    width: 700px;
     height: 550px;
     background-size: cover;
     background-position: center;
